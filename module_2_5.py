@@ -4,9 +4,9 @@ def get_matrix(n,m,value,matrix = None):
     for i in range(n):
         if n <= 0 or m <= 0 or value <= 0:
             break
-        matrix.append(0)
+        matrix.append([])
         for j in range(m):
-            matrix[i] = [value] * m
+            matrix[i].append(value)
     return matrix
 
 r1 = get_matrix(2,2,10)
